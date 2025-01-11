@@ -175,6 +175,81 @@ nav .right a span {
   }
 }
 
+/* SECTION 3: Contact */
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.contact-section h2 {
+  font-size: 35px;
+}
+
+.contact-section .group {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-section .group .text {
+  flex: 3;
+  margin-top: 20px;
+}
+
+.contact-section .group form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid var(--link-color);
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+
+.contact-section .group form button {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: var(--link-color);
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: .1s;
+}
+
+.contact-section .group form button:hover {
+  filter: brightness(.9);
+}
+
+@media (max-width: 850px) {
+  /* SECTION 1: Hero */
+  .hero-section .text h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 740px) {
+  /* SECTION 1: Hero */
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .headshot img {
+    width: 300px;
+  }
+
+  /* SECTION 3: Contact */
+  .contact-section .group {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 600px) {
   /* NAVBAR */
   nav {
@@ -186,7 +261,7 @@ nav .right a span {
   }
 
   nav .right a:last-child {
-    color: #FFFFFF;
+    color: var(--text-color);
     background-color: transparent;
     padding: 0;
   }
@@ -211,5 +286,10 @@ nav .right a span {
 
   .skills-section .cells .cell span {
     font-size: 16px;
+  }
+
+  /* SECTION 3: Contact */
+  .contact-section {
+    padding: 0 20px;
   }
 }
